@@ -3,35 +3,28 @@ body {
     box-sizing: border-box;
     max-width: 50em;
     margin: auto;
-
+    position: static;
 }
-
-h1 {
-    text-align: left;
-}
-
 
 .bayan {
     background-color: #f6f6ed;
     color:black;
-    position: static;
     box-sizing: border-box;
     text-align: left;
-    cursor: pointer;
-
-   
+    cursor: pointer;   
 }
 
 .text-foto {
     border-width: 2px 0 0;
     border-style: solid;
     border-color: #d3d9e1;
-
 }
 
+/*Разобраться с отобржением фото посередине */
 .mem-foto {
     display: none;
-
+    max-width: 100%;
+    padding: 1em 17%;
 }
 
 .mem-label {
@@ -39,16 +32,42 @@ h1 {
     cursor: pointer;
 }
 
-
+/* Убираем кругляшок выбора радиокнопки */
 .mem-input {
     appearance: none;
 }
 
+/* hover — наведение курсора мышки */
 .mem-input:hover + .mem-foto {
     display: block;
+
 }
 
 .mem-input:checked + .mem-foto {
-    display: inline-block;
+    display: block;
 }
 
+span {
+    display: inline;
+    
+    border-style: solid;
+    border-width: 10px 8px 0 8px;
+    border-color: black transparent transparent transparent;
+}
+
+.mem-label {
+    display: flex;
+    position: static;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 2% 0 0;
+}
+
+span:hover {
+    display: inline;
+    position: static;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 0 8px 10px 8px;
+    border-color: transparent transparent #000 transparent;
+}
