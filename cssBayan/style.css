@@ -22,11 +22,14 @@ h1 {
     font-size: 1.5em;
 }
 
+
 .text-foto {
     border-width: 2px 0 0;
     border-style: solid;
     border-color: #d3d9e1;
 }
+
+
 
 /*Разобраться с отобржением фото посередине */
 .mem-foto {
@@ -54,6 +57,7 @@ h1 {
 .mem-input:checked + .mem-foto {
     display: block;
 }
+
 
 span {
     display: inline;
